@@ -8,12 +8,4 @@ jobs:
     steps:
     - uses: scottlow/task-comment-action@master
       with:
-        message: |-
-          Hello, world!
-          Testing to see if **markdown** is supported!
-          Let's try a checklist!
-          - [ ] Have you read about Privacy?
-          - [ ] Did you implement some best practices?
-          - [x] This one is checked!
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        assignees: '["scottlow"]'
