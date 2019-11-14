@@ -1,0 +1,11 @@
+name: Pull Request Commenter
+on:
+- pull_request
+jobs:
+  auto-pr-comment:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: scottlow/pr-comment-action@master
+      with:
+        message: 'Hello, world!' 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
