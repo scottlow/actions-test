@@ -1,6 +1,5 @@
 name: Pull Request Commenter
-on:
-- pull_request
+on: pull_request
 jobs:
   auto-pr-comment:
     runs-on: ubuntu-latest
@@ -9,3 +8,4 @@ jobs:
       with:
         message: 'Hello, world! Testing to see if **markdown** is supported!' 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        assignees: '["scottlow"]'
