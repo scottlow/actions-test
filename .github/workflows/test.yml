@@ -1,7 +1,6 @@
 name: Task Completion Checker
 on: 
-  pull_request:
-    types: [opened, edited, synchronize]
+  pull_request_review_comment
 jobs:
   task-completion-checker:
     runs-on: ubuntu-latest
