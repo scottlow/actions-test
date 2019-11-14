@@ -1,5 +1,7 @@
 name: Pull Request Commenter
-on: pull_request
+on: 
+  pull_request:
+    types: [opened]
 jobs:
   auto-pr-comment:
     runs-on: ubuntu-latest
@@ -15,9 +17,3 @@ jobs:
           - [x] This one is checked!
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         assignees: '["scottlow"]'
-  check-tasks:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: scottlow/task-complete-action@master
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
