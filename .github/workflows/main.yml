@@ -15,3 +15,9 @@ jobs:
           - [x] This one is checked!
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         assignees: '["scottlow"]'
+  check-tasks:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: scottlow/task-complete-action@master
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
