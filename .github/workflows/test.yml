@@ -6,6 +6,6 @@ jobs:
   task-completion-checker:
     runs-on: ubuntu-latest
     steps:
-    - uses: scottlow/task-comment-action@master
+    - uses: scottlow/task-complete-action@master
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
